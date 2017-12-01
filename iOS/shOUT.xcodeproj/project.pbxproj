@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C1D7B9C1FD1AC250090CE3A /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D7B9B1FD1AC250090CE3A /* BlogTableViewCell.swift */; };
-		0C1D7B9E1FD1B00C0090CE3A /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D7B9D1FD1B00C0090CE3A /* NewsFeedViewController.swift */; };
 		0C884F871FD1FB0F00064E57 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C884F861FD1FB0F00064E57 /* BlogViewController.swift */; };
 		170326511E240B60003BEF5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 170326501E240B60003BEF5B /* GoogleService-Info.plist */; };
 		170326531E240B65003BEF5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 170326521E240B65003BEF5B /* GoogleService-Info.plist */; };
@@ -60,7 +59,6 @@
 /* Begin PBXFileReference section */
 		05E6F813C300BD07404B744A /* Pods-shOUT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shOUT.release.xcconfig"; path = "Pods/Target Support Files/Pods-shOUT/Pods-shOUT.release.xcconfig"; sourceTree = "<group>"; };
 		0C1D7B9B1FD1AC250090CE3A /* BlogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
-		0C1D7B9D1FD1B00C0090CE3A /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		0C8413FB02E040FD344E7AB8 /* Pods_shOUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shOUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C884F861FD1FB0F00064E57 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		170326501E240B60003BEF5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				17B967B21E1C403E008F94A5 /* FindOutViewController.swift */,
-				0C1D7B9D1FD1B00C0090CE3A /* NewsFeedViewController.swift */,
 				0C884F861FD1FB0F00064E57 /* BlogViewController.swift */,
 				17B967861E1C3B58008F94A5 /* SpeakOutViewController.swift */,
 				17AAF9811E24679E00F66887 /* PostViewController.swift */,
@@ -572,7 +569,6 @@
 				1732BDA11E231BD900D1347A /* BlogPost.swift in Sources */,
 				17B967851E1C3B58008F94A5 /* ReachOutViewController.swift in Sources */,
 				174E5F9D1E21888C00E010F7 /* Parent.swift in Sources */,
-				0C1D7B9E1FD1B00C0090CE3A /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

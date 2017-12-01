@@ -35,7 +35,10 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
         blogTableView.register(BlogTableViewCell.self, forCellReuseIdentifier: "news")
         blogTableView.backgroundColor = .lightGray
         view.addSubview(blogTableView)
-        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,7 +52,12 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let grayBox = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 20))
+        return grayBox
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

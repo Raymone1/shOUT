@@ -26,9 +26,8 @@ class BlogTableViewCell: UITableViewCell {
     var supportButton: UIButton!
     var delegate: BlogTableViewCellDelegate?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
         titleLabel.center = center
