@@ -24,10 +24,13 @@ class NewsFeedTableViewCell2: UITableViewCell {
     selectionStyle = .default
     
     dateText = UILabel()
-    
-    dateText.textColor = UIColor.white.withAlphaComponent(0.8)
+    dateText.textColor = .black
+    postText = UILabel()
+    postText.font = UIFont(name: "Helvetica Bold", size: 20.0)
+
     
     addSubview(dateText)
+    addSubview(postText)
     }
 
     
@@ -44,7 +47,8 @@ class NewsFeedTableViewCell2: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        dateText.frame = self.frame
+        dateText.frame = CGRect (x: 0, y: frame.height / 2.0, width: frame.width, height: frame.height / 4.0)
+        postText.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height / 4.0)
     }
     
     
