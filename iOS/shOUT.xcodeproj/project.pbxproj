@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C1D7B9C1FD1AC250090CE3A /* NewsFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D7B9B1FD1AC250090CE3A /* NewsFeedCollectionViewCell.swift */; };
+		0C1D7B9C1FD1AC250090CE3A /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D7B9B1FD1AC250090CE3A /* BlogTableViewCell.swift */; };
 		0C1D7B9E1FD1B00C0090CE3A /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D7B9D1FD1B00C0090CE3A /* NewsFeedViewController.swift */; };
+		0C884F871FD1FB0F00064E57 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C884F861FD1FB0F00064E57 /* BlogViewController.swift */; };
 		170326511E240B60003BEF5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 170326501E240B60003BEF5B /* GoogleService-Info.plist */; };
 		170326531E240B65003BEF5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 170326521E240B65003BEF5B /* GoogleService-Info.plist */; };
 		170326551E240B6A003BEF5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 170326541E240B6A003BEF5B /* GoogleService-Info.plist */; };
@@ -57,9 +58,10 @@
 
 /* Begin PBXFileReference section */
 		05E6F813C300BD07404B744A /* Pods-shOUT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shOUT.release.xcconfig"; path = "Pods/Target Support Files/Pods-shOUT/Pods-shOUT.release.xcconfig"; sourceTree = "<group>"; };
-		0C1D7B9B1FD1AC250090CE3A /* NewsFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C1D7B9B1FD1AC250090CE3A /* BlogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
 		0C1D7B9D1FD1B00C0090CE3A /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		0C8413FB02E040FD344E7AB8 /* Pods_shOUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shOUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C884F861FD1FB0F00064E57 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		170326501E240B60003BEF5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		170326521E240B65003BEF5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		170326541E240B6A003BEF5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				17B967B21E1C403E008F94A5 /* FindOutViewController.swift */,
 				0C1D7B9D1FD1B00C0090CE3A /* NewsFeedViewController.swift */,
+				0C884F861FD1FB0F00064E57 /* BlogViewController.swift */,
 				17B967861E1C3B58008F94A5 /* SpeakOutViewController.swift */,
 				17AAF9811E24679E00F66887 /* PostViewController.swift */,
 				17AAF9831E24681500F66887 /* SinglePostViewController.swift */,
@@ -166,7 +169,7 @@
 		0C1D7B9A1FD1ABFF0090CE3A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				0C1D7B9B1FD1AC250090CE3A /* NewsFeedCollectionViewCell.swift */,
+				0C1D7B9B1FD1AC250090CE3A /* BlogTableViewCell.swift */,
 				8CFF6E141FD1F4070096CF2D /* NewsFeedTableViewCell.swift */,
 			);
 			path = Cells;
@@ -556,11 +559,12 @@
 				17B967831E1C3B58008F94A5 /* AppDelegate.swift in Sources */,
 				17B967B51E1C40A8008F94A5 /* GoOutViewController.swift in Sources */,
 				1761222F1E2194D800DA0CC2 /* CustomNavigationController.swift in Sources */,
+				0C884F871FD1FB0F00064E57 /* BlogViewController.swift in Sources */,
 				17AAF9841E24681500F66887 /* SinglePostViewController.swift in Sources */,
 				170326591E2421B0003BEF5B /* Extensions.swift in Sources */,
 				17B967B31E1C403E008F94A5 /* FindOutViewController.swift in Sources */,
 				8CFF6E151FD1F4070096CF2D /* NewsFeedTableViewCell.swift in Sources */,
-				0C1D7B9C1FD1AC250090CE3A /* NewsFeedCollectionViewCell.swift in Sources */,
+				0C1D7B9C1FD1AC250090CE3A /* BlogTableViewCell.swift in Sources */,
 				1732BDA11E231BD900D1347A /* BlogPost.swift in Sources */,
 				17B967851E1C3B58008F94A5 /* ReachOutViewController.swift in Sources */,
 				174E5F9D1E21888C00E010F7 /* Parent.swift in Sources */,
