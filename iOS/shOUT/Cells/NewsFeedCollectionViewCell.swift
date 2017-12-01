@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol NewsFeedTableViewCellDelegate {
-    func newsFeedTableViewCellDidTapMeToo(newsFeedTableViewCell: NewsFeedTableViewCell)
-    func newsFeedTableViewCellDidTapWitnessed(newsFeedTableViewCell: NewsFeedTableViewCell)
-    func newsFeedTableViewCellDidTapSupport(newsFeedTableViewCell: NewsFeedTableViewCell)
+protocol BlogTableViewCellDelegate {
+    func blogTableViewCellDidTapMeToo(blogTableViewCell: BlogTableViewCell)
+    func blogTableViewCellDidTapWitnessed(blogTableViewCell: BlogTableViewCell)
+    func blogTableViewCellDidTapSupport(blogTableViewCell: BlogTableViewCell)
 }
 
-class NewsFeedTableViewCell: UITableViewCell {
+class BlogTableViewCell: UITableViewCell {
     
     var titleLabel: UILabel!
     var locationLabel: UILabel!
@@ -24,7 +24,7 @@ class NewsFeedTableViewCell: UITableViewCell {
     var meTooButton: UIButton!
     var witnessedButton: UIButton!
     var supportButton: UIButton!
-    var delegate: NewsFeedTableViewCellDelegate?
+    var delegate: BlogTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -50,16 +50,16 @@ class NewsFeedTableViewCell: UITableViewCell {
     @objc func buttonPressed(button: UIButton) {
         switch button {
             case meTooButton:
-                delegate?.newsFeedTableViewCellDidTapMeToo(newsFeedTableViewCell: self)
+                delegate?.blogTableViewCellDidTapMeToo(blogTableViewCell: self)
                 break
             case witnessedButton:
-                delegate?.newsFeedTableViewCellDidTapWitnessed(newsFeedTableViewCell: self)
+                delegate?.blogTableViewCellDidTapWitnessed(blogTableViewCell: self)
                 break
             case supportButton:
-                delegate?.newsFeedTableViewCellDidTapSupport(newsFeedTableViewCell: self)
+                delegate?.blogTableViewCellDidTapSupport(blogTableViewCell: self)
                 break
             default:
-                delegate?.newsFeedTableViewCellDidTapMeToo(newsFeedTableViewCell: self)
+                delegate?.blogTableViewCellDidTapMeToo(blogTableViewCell: self)
         }
     }
     
