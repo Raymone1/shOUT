@@ -28,7 +28,7 @@ class FindOutViewController: UITableViewController {
     }
     
     @objc func press() {
-        navigationController?.pushViewController(NewsFeedViewController(), animated: true)
+        navigationController?.pushViewController(BlogViewController(), animated: true)
     }
 
     override func didReceiveMemoryWarning() {
