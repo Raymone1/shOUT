@@ -8,13 +8,19 @@
 
 import UIKit
 
+protocol NewsFeedTableViewCell2Delegate {
+    func newsFeedTableViewCell2(newsFeedTableViewCell2: NewsFeedTableViewCell2)
+}
+
 class NewsFeedTableViewCell2: UITableViewCell {
 
     var dateText: UILabel!
-    // var delegate:
+    var postText: UILabel!
+    var delegate: NewsFeedTableViewCell2Delegate?
     
-    override func awakeFromNib() {
-    super.awakeFromNib()
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    
     selectionStyle = .default
     
     dateText = UILabel()
@@ -29,8 +35,9 @@ class NewsFeedTableViewCell2: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setup(dateTextString: String){
+    func setup(dateTextString: String, postTextString: String){
         dateText.text = dateTextString
+        postText.text = postTextString
     }
     
     
