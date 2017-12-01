@@ -27,7 +27,7 @@ class FindOutViewController: UITableViewController {
         let newsButton2 = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(press2))
         navigationItem.leftBarButtonItems?.append(newsButton2)
         
-        navigationItem.setLeftBarButtonItems(navigationItem.leftBarButtonItems, animated: true)
+        navigationItem.setLeftBarButtonItems([newsButton,newsButton2], animated: true)
 
         // Do any additional setup after loading the view.
     }
