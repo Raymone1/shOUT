@@ -22,10 +22,13 @@ class FindOutViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
         let newsButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(press))
-        navigationItem.leftBarButtonItems?.append(newsButton)
+        navigationItem.leftBarButtonItem = newsButton
         
-        let newsButton2 = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(press2))
-        navigationItem.leftBarButtonItems?.append(newsButton2)
+   //     let newsButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(press))
+   //     navigationItem.leftBarButtonItems?.append(newsButton)
+        
+   //     let newsButton2 = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(press2))
+   //     navigationItem.leftBarButtonItems?.append(newsButton2)
         
         navigationItem.setLeftBarButtonItems(navigationItem.leftBarButtonItems, animated: true)
 

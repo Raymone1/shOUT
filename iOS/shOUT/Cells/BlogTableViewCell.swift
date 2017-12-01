@@ -25,25 +25,29 @@ class BlogTableViewCell: UITableViewCell {
     var witnessedButton: UIButton!
     var supportButton: UIButton!
     var delegate: BlogTableViewCellDelegate?
+    var box: UIView!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
+        titleLabel = UILabel()
         titleLabel.center = center
         titleLabel.textAlignment = .center
         //      addSubview(titleLabel)
         locationLabel = UILabel()
-        storyTextView = UITextView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
-        storyTextView.center = center
+        box =  CGRect(x: 0, y: 0, width: 350, height: 214)
+        box.backgroundColor = .white
+        box.center = CGPoint(x: 375 / 2.0, y: center.y)
+        addSubview(box)
+        storyTextView = UITextView(frame: CGRect(x: 0, y: 0, width: 325, height: box.height / 2.0))
+        storyTextView.center = CGPoint(x: 375 / 2.0, y: center.y)
         addSubview(storyTextView)
         postDateLabel = UILabel()
         iconImageView = UIImageView()
         meTooButton = UIButton()
         witnessedButton = UIButton()
         supportButton = UIButton()
-        
-        backgroundColor = .white
+        backgroundColor = .clear
     }
     
     @objc func buttonPressed(button: UIButton) {

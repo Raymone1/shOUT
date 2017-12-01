@@ -61,7 +61,7 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.width / 2.0
+        return view.frame.width / 1.75
     }
     
     func blogTableViewCellDidTapMeToo(blogTableViewCell: BlogTableViewCell) {
